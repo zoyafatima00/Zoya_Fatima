@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Property Asia</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <style type="text/css">
+        body {
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .nav-wrapper {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-wrapper a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #navigation {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        #navigation li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .main-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .img-container img {
+            width: 150px; /* Adjust the size of the logo */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 20px);
+            max-width: 300px;
+            position: relative;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .gallery-item h5 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-item {
+                width: 100%;
+            }
+        }
+
+        /* Additional styling for improved layout */
+        .gallery-item:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        /* Typography improvements */
+        h3 {
+            font-family: 'Russo One', sans-serif;
+            color: #444;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h5 {
+            font-family: 'Russo One', sans-serif;
+            color: #444;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        ul li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #ff6347;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="nav-wrapper">
+        <a href="index.html">
+            <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+            </div>
+        </a>
+
+        <ul id="navigation">
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <div class="img-container">
+            <img src="images\propertyasia\01.jpg" alt="GoToApp Logo">
+        </div>
+
+        <h3>Property Asia - Explore and Purchase Real Estate</h3>
+
+<p>The Property Asia app was developed to provide users with a convenient platform for discovering and purchasing properties.
+    <br><br>
+    I played a significant role in the development of this project, focusing on creating a user-friendly frontend that allows seamless navigation and property browsing.
+    <br><br>
+    My contributions included integrating APIs to ensure smooth data retrieval and synchronization, as well as implementing functionality to manage user permissions effectively.
+    <br><br>
+    I also worked on integrating Google Maps, enabling users to view property locations and access directions with ease.
+    <br><br>
+    Our team aimed to deliver a comprehensive solution for real estate enthusiasts, continuously enhancing the app to meet user expectations.</p>
+
+<h5>Technologies:</h5>
+<ul>
+    <li><strong>Flutter</strong>: Developed the app's cross-platform interface, providing a consistent experience on Android and iOS devices.</li>
+    <li><strong>Dart</strong>: Utilized for building the app's architecture and handling business logic.</li>
+    <li><strong>Google Maps API</strong>: Integrated to provide location-based services and map functionalities.</li>
+    <li><strong>RESTful APIs</strong>: Connected the frontend with backend services to enable dynamic data flow.</li>
+    <li><strong>Git</strong>: Used for version control, ensuring a smooth development process.</li>
+    <li><strong>GitHub</strong>: Facilitated collaborative development and code management.</li>
+    <li><strong>Android Studio Code</strong>: Served as the primary development environment for coding and debugging.</li>
+</ul>
+
+        <h3>Application Screenshots</h3>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images\propertyasia\2.jpg" alt="OnBoarding Screen">
+                <h5>OnBoarding Screen</h5>
+            </div>
+            <div class="gallery-item">
+                <img src="images\propertyasia\3.jpg" alt="Location Access">
+                <h5>Location Access</h5>
+            </div>
+            <div class="gallery-item">
+                <img src="images\propertyasia\4.jpg" alt="User Registration">
+                <h5>User Registration</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

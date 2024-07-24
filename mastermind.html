@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Master Mind</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <style type="text/css">
+        body {
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .nav-wrapper {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-wrapper a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #navigation {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        #navigation li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .main-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .img-container img {
+            width: 150px; /* Adjust the size of the logo */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .showcase-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 20px);
+            max-width: 300px;
+            position: relative;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .showcase-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .showcase-item h5 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .showcase-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .showcase-item {
+                width: 100%;
+            }
+        }
+
+        /* Additional styling for improved layout */
+        .showcase-item:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        /* Typography improvements */
+        h3 {
+            font-family: 'Russo One', sans-serif;
+            color: #444;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h5 {
+            font-family: 'Russo One', sans-serif;
+            color: #444;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        ul li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #ff6347;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="nav-wrapper">
+        <a href="index.html">
+            <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+            </div>
+        </a>
+
+        <ul id="navigation">
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <div class="img-container">
+
+            <img src="images/mastermind/logo.jpg" alt="Master Mind Logo">
+        </div>
+
+        <h3>Master Mind</h3>
+
+        <p>I developed this app at the end of 2023 to provide users with guided hypnosis and relaxation audio tracks.
+        <br><br>
+        As the sole developer, I focused on designing a user-friendly interface and integrating a diverse range of content.
+        <br><br>
+        The app allows users to access various hypnosis sessions for relaxation and personal growth, featuring options to browse content, save favorites, and track progress.
+        <br><br>
+        It includes customizable settings and session reminders for a tailored experience.
+        <br><br>
+        I worked on this project to offer an accessible tool for mental wellness, continuously updating it based on user feedback.</p>
+
+        <h5>Technologies:</h5>
+        <ul>
+            <li><strong>Flutter</strong> - For cross-platform mobile app development</li>
+            <li><strong>Dart</strong> - Programming language used with Flutter</li>
+            <li><strong>Firebase</strong> - For authentication, real-time database, and cloud functions</li>
+            <li><strong>Firestore</strong> - Real-time data storage and management</li>
+            <li><strong>Stripe or PayPal</strong> - Secure payment processing</li>
+            <li><strong>RESTful APIs</strong> - For frontend and backend communication</li>
+            <li><strong>Git</strong> - Version control</li>
+            <li><strong>GitHub</strong> - Repository hosting and collaboration</li>
+            <li><strong>Android Studio or Visual Studio Code</strong> - Development and code editing</li>
+        </ul>
+
+        <h3>Application Screenshots</h3>
+        <div class="showcase">
+            <div class="showcase-item">
+                <img src="images/mastermind/home.jpg" alt="Home">
+                <h5>Home</h5>
+            </div>
+            <div class="showcase-item">
+                <img src="images/mastermind/profile.jpg" alt="User Profile">
+                <h5>User Profile</h5>
+            </div>
+            <div class="showcase-item">
+                <img src="images/mastermind/menu.jpg" alt="Customer Dashboard">
+                <h5>Customer Dashboard</h5>
+            </div>
+            <div class="showcase-item">
+                <img src="images/mastermind/monthly_subscription.jpg" alt="Monthly Subscription Model">
+                <h5>Monthly Subscription Model</h5>
+            </div>
+            <div class="showcase-item">
+                <img src="images/mastermind/minmastry_subsc.jpg" alt="Mind Mastery Subscription Model">
+                <h5>Mind Mastery Subscription Model</h5>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

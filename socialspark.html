@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Social Spark</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="default.css">
+
+    <style type="text/css">
+        body {
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .nav-wrapper {
+            background-color: #444;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .nav-wrapper a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #navigation {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        #navigation li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        .main-container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .img-container {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .img-container img {
+            width: 150px; /* Adjust the size of the logo */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .showcase {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 40px;
+        }
+
+        .showcase-item {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(50% - 20px);
+            max-width: 300px;
+            position: relative;
+            margin-bottom: 20px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .showcase-item img {
+            width: 100%;
+            height: auto;
+        }
+
+        .showcase-item h5 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .showcase-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .showcase-item {
+                width: 100%;
+            }
+        }
+
+        /* Additional styling for improved layout */
+        .showcase-item:nth-child(odd) {
+            background-color: #e0e0e0;
+        }
+
+        /* Typography improvements */
+        h3 {
+            font-family: 'Russo One', sans-serif;
+            color: #444;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h5 {
+            font-family: 'Russo One', sans-serif;
+            color: #444;
+            margin: 10px 0;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        ul li:before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #ff6347;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="nav-wrapper">
+        <a href="index.html">
+            <div class="dots-wrapper">
+                <div id="dot-1" class="browser-dot"></div>
+                <div id="dot-2" class="browser-dot"></div>
+                <div id="dot-3" class="browser-dot"></div>
+            </div>
+        </a>
+
+        <ul id="navigation">
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div class="main-container">
+        <div class="img-container">
+            <img src="images\socialspark\0.jpg" alt="Master Mind Logo">
+        </div>
+
+        <h3>Social Spark</h3>
+
+        <p>This app was developed as a semester project to provide users with a comprehensive social media experience. The app enables users to post updates, interact with content through likes and comments, and manage their social connections by following other users.
+            <br><br>
+            Key features include:
+            <ul>
+                <li><strong>Post Creation:</strong> Users can create and share posts with text and images.</li>
+                <li><strong>Likes and Comments:</strong> Users can engage with posts by liking and commenting. Comments can be added, edited, or deleted.</li>
+                <li><strong>Update Captions:</strong> Users can update the captions of their posts at any time.</li>
+                <li><strong>Follow Functionality:</strong> Users can follow others to see their updates in their feed.</li>
+            </ul>
+            The app uses Firebase for backend services, providing a robust and scalable solution for user authentication and real-time data synchronization. This eliminates the need for external APIs, allowing for a more streamlined development process.
+            <br><br>
+            The project aimed to create an engaging and user-friendly social media platform, offering a hands-on experience with Firebase integration and Flutter development.</p>
+
+            <h5>Technologies:</h5>
+            <ul>
+                <li><strong>Flutter</strong> - Utilized for developing a cross-platform mobile application, ensuring a native-like experience on both iOS and Android devices.</li>
+                <li><strong>Dart</strong> - The programming language used with Flutter to write the app's code and manage its logic.</li>
+                <li><strong>Firebase</strong> - Employed for user authentication, real-time data storage, and managing user interactions without relying on external APIs.</li>
+                <li><strong>Firestore</strong> - A NoSQL database service from Firebase used to store and synchronize user data in real-time.</li>
+                <li><strong>Git</strong> - Version control system used to manage and track changes in the project’s codebase.</li>
+                <li><strong>GitHub</strong> - Platform for hosting the project repository, enabling collaboration and version control.</li>
+                <li><strong>Android Studio or Visual Studio Code</strong> - Integrated development environments (IDEs) used for coding, debugging, and testing the app.</li>
+            </ul>
+            <p>The choice of these technologies ensured a robust and scalable application, allowing for efficient development and deployment of the social media platform.</p>
+
+
+            <h3>Application Screenshots</h3>
+            <div class="showcase">
+                <div class="showcase-item">
+                    <img src="images\socialspark\1.jpg" alt="Home Feed">
+                    <h5>Splash</h5>
+                </div>
+                <div class="showcase-item">
+                    <img src="images\socialspark\2.jpg" alt="User Profile">
+                    <h5>User SignUp</h5>
+                </div>
+                <div class="showcase-item">
+                    <img src="images\socialspark\3.jpg" alt="Post Creation">
+                    <h5>User Profile</h5>
+                </div>
+                <div class="showcase-item">
+                    <img src="images\socialspark\4.jpg" alt="Like and Comment">
+                    <h5>Post</h5>
+                </div>
+                <div class="showcase-item">
+                    <img src="images\socialspark\5.jpg" alt="Edit Caption">
+                    <h5>Add Comment</h5>
+                </div>
+                <div class="showcase-item">
+                    <img src="images\socialspark\6.jpg" alt="Follow User">
+                    <h5>Add Caption</h5>
+                </div>
+                <div class="showcase-item">
+                    <img src="images\socialspark\7.jpg" alt="Feed Updates">
+                    <h5>Edit Caption</h5>
+                </div>
+                <div class="showcase-item">
+                    <img src="images\socialspark\8.jpg" alt="Comment Management">
+                    <h5>Create ChatRoom</h5>
+                </div>
+                <div class="showcase-item">
+                    <img src="images\socialspark\9.jpg" alt="Settings">
+                    <h5>Have Chat</h5>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>
